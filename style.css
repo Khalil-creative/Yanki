@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.promo {
+    background-image: url(img/girls.svg);
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    margin-bottom: 40px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.header button {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+}
+
+.text-mid {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 320px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-mid h1 {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 31px;
+    line-height: 54px;
+    opacity: 0.85;
+    color: white;
+}
+
+.text-mid img {
+    margin-bottom: 20px;
+}
+
+.text-mid a {
+    text-decoration: none;
+    color: white;
+}
+
+.category {
+    padding: 50px 0;
+}
+
+.category h2 {
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.elem {
+    position: relative;
+
+}
+
+.elem img {
+    width: 100%;
+}
+
+.abs {
+    position: absolute;
+    background: rgba(224, 190, 162, 0.75);
+    right: 0;
+    left: 0;
+    bottom: 4px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+
+.feedback {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.feedback h2 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 30px;
+}
+
+.form {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+}
+
+.mar {
+    margin-bottom: 20px;
+}
+
+.formw {
+    padding: 15px 100px;
+    border: 1px solid #000;
+    width: 600px;
+    text-align: center;
+}
+
+.btn {
+    background: #E0BEA2;
+    color: white;
+    border: none;
+    width: 600px;
+    padding: 17px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.form p {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    color: #252525;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 75px;
+}
+
+.footer h3 {
+    font-weight: 300;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.item h2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* large экранов (планшеты */
+@media (max-width:1200px) {
+    .wrap {
+        width: 900px;
+    }
+
+    .item {
+        width: 115px;
+    }
+}
+
+/* medium экранов (планшеты) */
+@media(max-width:992px) {
+    .wrap {
+        width: 700px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .icons {
+        gap: 20px;
+    }
+
+}
+
+/* sm-экранов (для телефонов) */
+@media(max-width:768px) {
+
+    .wrap {
+        width: 500px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header button {
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .iconsn {
+        display: none;
+    }
+
+    .promo {
+        background: url(img/onegirl.svg) no-repeat center/cover;
+        height: 667px;
+    }
+
+    .text-mid {
+        margin-top: 250px;
+    }
+
+    .text-mid a {
+        font-size: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .formw {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+
+
+
+
+
+}
+
+/* xs-экранов (для телефонов) */
+@media(max-width:576px) {
+    .wrap {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .logo img {
+        height: 20px;
+
+    }
+
+}
